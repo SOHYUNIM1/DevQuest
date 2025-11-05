@@ -8,15 +8,15 @@ public class PlayerController : MonoBehaviour
     public Transform cameraTransform; 
 
     [Header("Movement Settings")]
-    public float walkSpeed = 3f;       // 기본 속도
+    public float walkSpeed = 3f;       
     public float runSpeed = 6f;        // 달리기 속도
-    public float gravity = -9.81f;     // 중력
-    public float jumpHeight = 1.2f;    // 점프 높이
-    public int maxJumpCount = 2;       // 이단 점프
+    public float gravity = -9.81f;     
+    public float jumpHeight = 1.2f;    
+    public int maxJumpCount = 2;       
 
     [Header("Mouse Look Settings")]
     public float mouseSensitivity = 120f; // 마우스 감도
-    public float pitchLimit = 80f;        // 상하 회전 제한
+    public float pitchLimit = 80f;        
 
     private CharacterController controller;
     private PlayerActions input;          
