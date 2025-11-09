@@ -9,7 +9,6 @@ public class EnemyHitReaction : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
 
-        // ScriptableObject 데이터 기반으로 초기화
         if (enemyData != null)
         {
             rb.mass = enemyData.mass;
@@ -37,7 +36,7 @@ public class EnemyHitReaction : MonoBehaviour
             enemyData.health -= amount;
             if (enemyData.health <= 0)
             {
-                gameObject.SetActive(false); // 풀링 고려 시 Destroy 대신 비활성화
+                gameObject.SetActive(false); 
             }
         }
     }
